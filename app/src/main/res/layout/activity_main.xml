@@ -1,42 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
+        android:layout_centerHorizontal="true"
         android:id="@+id/editText1"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
         android:id="@+id/editText2"/>
+
+    <Button
+        android:id="@+id/buttonSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:text="+" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+"
-        android:id="@+id/buttonSum"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="-"
+        android:layout_below="@+id/editText2"
+        android:layout_toRightOf="@+id/buttonSum"
         android:id="@+id/buttonMin"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="*"
+        android:layout_below="@+id/editText2"
+        android:layout_toRightOf="@+id/buttonMin"
         android:id="@+id/buttonMul"/>
+
     <Button
+        android:id="@+id/buttonDiv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="/"
-        android:id="@+id/buttonDiv"/>
+        android:layout_below="@+id/editText2"
+        android:layout_toRightOf="@+id/buttonMul"
+        android:text="/" />
 
-</LinearLayout>
+</RelativeLayout>

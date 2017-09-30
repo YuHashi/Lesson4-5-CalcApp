@@ -13,7 +13,7 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         Intent intent = getIntent();
-        int result = intent.getIntExtra("Result",0);
+        float result = intent.getFloatExtra("Result",0);
 
         TextView textView = (TextView) findViewById(R.id.textView);
         textView.setText(String.valueOf(result));

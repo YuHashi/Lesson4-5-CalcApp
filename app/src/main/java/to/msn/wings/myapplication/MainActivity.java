@@ -11,8 +11,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     EditText editText1;
     EditText editText2;
-    int value1;
-    int value2;
+    float value1;
+    float value2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String mEditText1 = editText1.getText().toString();
         String mEditText2 = editText2.getText().toString();
 
-        value1 = Integer.parseInt(mEditText1);
-        value2 = Integer.parseInt(mEditText2);
+        value1 = Float.parseFloat(mEditText1);
+        value2 = Float.parseFloat(mEditText2);
 
-        int calc = 0;
+        float calc = 0;
         if (v.getId()==R.id.buttonSum){
             calc = value1 + value2;
         } else if (v.getId()==R.id.buttonMin){
